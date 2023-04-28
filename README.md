@@ -8,7 +8,7 @@ In this project, you will apply the skills you have acquired in this course to d
 
 Run the following commands to install the starter code in the Udacity Workspace:
 
-Clone the <a href="https://github.com/udacity/nd013-c6-control-starter/tree/master" target="_blank">repository</a>:
+Clone the <a href="https://github.com/Shenhapy/Udacity_Control-and-Trajectory-Tracking_project.git" target="_blank">repository</a>:
 
 `git clone https://github.com/Shenhapy/Udacity_Control-and-Trajectory-Tracking_project.git`
 
