@@ -1,9 +1,5 @@
 # Control and Trajectory Tracking for Autonomous Vehicle
 
-# Proportional-Integral-Derivative (PID)
-
-In this project, you will apply the skills you have acquired in this course to design a PID controller to perform vehicle trajectory tracking. Given a trajectory as an array of locations, and a simulation environment, you will design and code a PID controller and test its efficiency on the CARLA simulator used in the industry.
-
 ### Installation
 
 Run the following commands to install the starter code in the Udacity Workspace:
