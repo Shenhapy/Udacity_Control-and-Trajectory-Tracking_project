@@ -226,7 +226,7 @@ int main ()
   **/
 //// PID for steering controller kp,ki,kd,max limit, min limit
   PID pid_steer = PID();
-  pid_steer.Init(1.5, 0.001, 0.1,
+  pid_steer.Init(0.48, 0.006, 0.07,
                  1.2, -1.2);
 
   // initialize pid throttle
@@ -235,7 +235,7 @@ int main ()
   **/
 //// PID for throttle controller kp,ki,kd,max limit, min limit
   PID pid_throttle = PID();
-   pid_throttle.Init(1.1, 0.0007, 0.04,
+  pid_throttle.Init(0.18, 0.0004, 0.0005,
                     1.0, -1.0);
 
   h.onMessage([&pid_steer, &pid_throttle, &new_delta_time, &timer, &prev_timer, &i, &prev_timer](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode)
@@ -333,13 +333,12 @@ int main ()
                                  x_points[min_dst_indices], y_points[min_dst_indices]);
           //calc. error steer
           error_steer = desired_angle - yaw;
-          error_steer = correct_angle(error_steer);
           //if it out of range (-pi,+pi) make it in range
-               if(error_steer < - M_PI)
+               if(abs(error_steer) > M_PI && error_steer < - M_PI)
                     error_steer += 2 * M_PI;
-               if(error_steer > M_PI)
+               if(abs(error_steer) > M_PI && error_steer > M_PI)
                     error_steer -= 2 * M_PI;
-    /**
+          /**
           * TODO (step 3): uncomment these lines
           **/
           // Compute control to apply
@@ -376,7 +375,7 @@ int main ()
           // find the difference between speeds 
           // if positive so you need to accelerate as the current speed is less than desired
           // if negative so you need to deccelerate as the current speed is more than desired
-          error_throttle = desired_speed[min_dst_indices] - velocity;
+          error_throttle = v_points[min_dst_indices] - velocity;
 
           
           double throttle_output;
