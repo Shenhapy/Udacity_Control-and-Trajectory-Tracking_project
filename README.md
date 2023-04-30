@@ -1,9 +1,9 @@
 # Udacity Control and Trajectory Tracking for Autonomous Vehicle
 
 ### The code and results
-Find the results graphs and videos in folder images above with some fail trials videos as I am trying to tune the pid to have final 2 accepted but no good trials.
+Find the results graphs and videos in folder images above with some fail trials videos as I am trying to tune the pid to have final 2 accepted but not so good trials.
 
-Find the code used exists separtly as named main.cpp , pid_controller.cpp and pid_controller.h. 
+Find the codes used exists separtly as named main.cpp , pid_controller.cpp and pid_controller.h. 
 it is possible to take those codes content to copy in Udacity workspace instead of exist codes and run
 or follow installation method to have same results.
 
