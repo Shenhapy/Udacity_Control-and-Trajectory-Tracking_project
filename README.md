@@ -73,8 +73,8 @@ The code is Comment and I Tune the parameters of the pid as possible.
 Find the result video in folder images with some other videos for tunning trials in folder bad and trio crash
 ### Step 3: Evaluate the PID efficiency
 Finally the evaluation of the results
-<img src='a1/cntrl1.png'/>
-<img src='a2/cntrl1.png'/>
+<img src='images/a1.png'/>
+<img src='images/a2.png'/>
 
 Answer the following questions:
 - Add the plots to your report and explain them (describe what you see)
