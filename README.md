@@ -68,7 +68,7 @@ To find this result shown in image below and the car not moving
 
 ### Step 2: PID controller for throttle and steer:
 In [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp)
-The code is Comment and I Tune the parameters of the pid as possible.
+The code Commented and I Tuned the parameters of the pid as possible.
 
 Find the result video in folder images with some other videos for tunning trials in folder bad and trio crash
 ### Step 3: Evaluate the PID efficiency
