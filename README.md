@@ -1,5 +1,10 @@
 # Udacity Control and Trajectory Tracking for Autonomous Vehicle
 
+### The code
+Find the code used exists separtly as named main.cpp , pid_controller.cpp and pid_controller.h. 
+it is possible to take those codes content to copy in Udacity workspace instead of exist codes and run
+or follow installation method to have same results
+
 ### Installation
 
 Run the following commands to install the starter code in the Udacity Workspace:
@@ -47,9 +52,7 @@ If error bind is already in use, or address already being used
 
 ## Project Instructions
 
-In the previous project you built a path planner for the autonomous vehicle. Now you will build the steer and throttle controller so that the car follows the trajectory.
-
-You will design and run the a PID controller as described in the previous course.
+I build the steer and throttle controller so that the car follows the trajectory.
 
 In the directory [/pid_controller](https://github.com/udacity/nd013-c6-control-starter/tree/master/project/pid_controller)  you will find the files [pid_controller.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/pid_controller.cpp)  and [pid_controller.h](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/pid_controller.h). This is where you will code your pid controller.
 The function pid is called in [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp).
@@ -58,6 +61,8 @@ The function pid is called in [main.cpp](https://github.com/udacity/nd013-c6-con
 Complete the TODO in the [pid_controller.h](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/pid_controller.h) and [pid_controller.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/pid_controller.cpp).
 
 Run the simulator and see in the desktop mode the car in the CARLA simulator. Take a screenshot and add it to your report. The car should not move in the simulation.
+To find this result shown in image below and the car not moving
+<img src='images/cntrl_1.png'/>
 ### Step 2: PID controller for throttle:
 1) In [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp), complete the TODO (step 2) to compute the error for the throttle pid. The error is the speed difference between the actual speed and the desired speed.
 
