@@ -73,16 +73,34 @@ The code is Comment and I Tune the parameters of the pid as possible.
 Find the result video in folder images with some other videos for tunning trials in folder bad and trio crash
 ### Step 3: Evaluate the PID efficiency
 Finally the evaluation of the results
+
 Q1- Add the plots to your report and explain them (describe what you see)
+
+
 
 <img src='images/a1.png'/>
 <img src='images/a2.png'/>
 
 Q2- What is the effect of the PID according to the plots, how each part of the PID affects the control command?
 
+The proportional gain (Kp) [Amplifies the error signal] determines how much the controller responds to the current error. A high value of Kp will cause the controller to respond more aggressively to the error, but may also cause overshooting and instability.
+
+The integral gain (Ki) [Eliminate steady-state error signal]determines how much the controller responds to the accumulated error over time. A high value of Ki will cause the controller to respond more aggressively to long-term errors, but may also cause instability and oscillation.
+
+The derivative gain (Kd) [Reduce overshoot and oscillations] determines how much the controller responds to the rate of change of the error by adding a term that is proportional to the derivative of the error signal to reduce overshoot and oscillation. but A high value of Kd will cause the controller to respond more aggressively to sudden changes in the error, but may also cause instability and overshooting.
+
 # Rest of the questions
 - How would you design a way to automatically tune the PID parameters?
+
+  Using Twiddle as in lessons it will iterate throght the code to find the best PID parameters to have minimum error
+  
 - PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+
+Pros: it is easy to understand and can be used in many systems and don't need a model of the system
+
+Cons: Not so easy to tune and not that accurate as other controllers that use the system model
+
 - (Optional) What would you do to improve the PID controller?
 
+Have a better tunned parameters by using Twiddle or even may use Ziegler-Nichols method as I am using a simulation so it will be possible to apply.
 
