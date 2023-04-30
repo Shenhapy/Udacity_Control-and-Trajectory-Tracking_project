@@ -1,9 +1,11 @@
 # Udacity Control and Trajectory Tracking for Autonomous Vehicle
 
-### The code
+### The code and results
+Find the results graphs and videos in folder images above with some fail trials videos as I am trying to tune the pid to have final 2 accepted but no good trials.
+
 Find the code used exists separtly as named main.cpp , pid_controller.cpp and pid_controller.h. 
 it is possible to take those codes content to copy in Udacity workspace instead of exist codes and run
-or follow installation method to have same results
+or follow installation method to have same results.
 
 ### Installation
 
@@ -50,7 +52,7 @@ If error bind is already in use, or address already being used
 * `kill id`
 
 
-## Project Instructions
+## The Project
 
 I build the steer and throttle controller so that the car follows the trajectory.
 
@@ -62,46 +64,17 @@ Complete the TODO in the [pid_controller.h](https://github.com/udacity/nd013-c6-
 
 Run the simulator and see in the desktop mode the car in the CARLA simulator. Take a screenshot and add it to your report. The car should not move in the simulation.
 To find this result shown in image below and the car not moving
-<img src='images/cntrl_1.png'/>
-### Step 2: PID controller for throttle:
-1) In [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp), complete the TODO (step 2) to compute the error for the throttle pid. The error is the speed difference between the actual speed and the desired speed.
+<img src='images/cntrl1.png'/>
 
-Useful variables:
-- The last point of **v_points** vector contains the velocity computed by the path planner.
-- **velocity** contains the actual velocity.
-- The output of the controller should be inside [-1, 1].
+### Step 2: PID controller for throttle and steer:
+In [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp)
+The code is Comment and I Tune the parameters of the pid as possible.
 
-2) Comment your code to explain why did you computed the error this way.
-
-3) Tune the parameters of the pid until you get satisfying results (a perfect trajectory is not expected).
-
-### Step 3: PID controller for steer:
-1) In [main.cpp](https://github.com/udacity/nd013-c6-control-starter/blob/master/project/pid_controller/main.cpp), complete the TODO (step 3) to compute the error for the steer pid. The error is the angle difference between the actual steer and the desired steer to reach the planned position.
-
-Useful variables:
-- The variable **y_points** and **x_point** gives the desired trajectory planned by the path_planner.
-- **yaw** gives the actual rotational angle of the car.
-- The output of the controller should be inside [-1.2, 1.2].
-- If needed, the position of the car is stored in the variables **x_position**, **y_position** and **z_position**
-
-2) Comment your code to explain why did you computed the error this way.
-
-3) Tune the parameters of the pid until you get satisfying results (a perfect trajectory is not expected).
-
-### Step 4: Evaluate the PID efficiency
-The values of the error and the pid command are saved in thottle_data.txt and steer_data.txt.
-Plot the saved values using the command (in nd013-c6-control-refresh/project):
-
-```
-python3 plot_pid.py
-```
-
-You might need to install a few additional python modules: 
-
-```
-pip3 install pandas
-pip3 install matplotlib
-```
+Find the result video in folder images with some other videos for tunning trials in folder bad and trio crash
+### Step 3: Evaluate the PID efficiency
+Finally the evaluation of the results
+<img src='a1/cntrl1.png'/>
+<img src='a2/cntrl1.png'/>
 
 Answer the following questions:
 - Add the plots to your report and explain them (describe what you see)
