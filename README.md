@@ -1,4 +1,4 @@
-# Control and Trajectory Tracking for Autonomous Vehicle
+# Udacity Control and Trajectory Tracking for Autonomous Vehicle
 
 ### Installation
 
@@ -21,7 +21,7 @@ Open new window
 
 Open new window
 
-* `cd nd013-c6-control-starter/project`
+* `cd Udacity_Control-and-Trajectory-Tracking_project/project`
 * `./install-ubuntu.sh`
 * `cd pid_controller/`
 * `rm -rf rpclib`
@@ -33,7 +33,7 @@ Open new window
 
 To test your installation run the following commands.
 
-* `cd nd013-c6-control-starter/project`
+* `cd Udacity_Control-and-Trajectory-Tracking_project/project`
 * `./run_main_pid.sh`
 This will silently fail `ctrl + C` to stop
 * `./run_main_pid.sh` (again)
