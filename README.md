@@ -75,8 +75,17 @@ Find the result video in folder images with some other videos for tunning trials
 Finally the evaluation of the results
 
 Q1- Add the plots to your report and explain them (describe what you see)
+The Vehicle with moving with good speed as i got the throttle kp to 0.18 and I got ki to 0.004 and kd to 0.005 to have a better dummped output without steady state error but if I increase more i have a bad behaviour with the other pid which is steering to have a Kp of 0.48 but still need a faster response but any increase cause crashes and to have better resonce I got ki to 0.006 and to avoid going over the sidewalk so i start increasing it more than that of throttle to 0.07.
 
+To was a long way with too many trials even more that those uploaded from the recommended values:
 
+Proportional gain (Kp): 0.1
+
+Integral gain (Ki): 0.0001
+
+Derivative gain (Kd): 1.0
+
+Those values meant to be recommended by the project guide but this part is missing so i use Udacity chatbot for help in this part.
 
 <img src='images/a1.png'/>
 <img src='images/a2.png'/>
@@ -85,7 +94,7 @@ Q2- What is the effect of the PID according to the plots, how each part of the P
 
 The proportional gain (Kp) [Amplifies the error signal] determines how much the controller responds to the current error. A high value of Kp will cause the controller to respond more aggressively to the error, but may also cause overshooting and instability.
 
-The integral gain (Ki) [Eliminate steady-state error signal]determines how much the controller responds to the accumulated error over time. A high value of Ki will cause the controller to respond more aggressively to long-term errors, but may also cause instability and oscillation.
+The integral gain (Ki) [Eliminate steady-state error signal] determines how much the controller responds to the accumulated error over time. A high value of Ki will cause the controller to respond more aggressively to long-term errors, but may also cause instability and oscillation.
 
 The derivative gain (Kd) [Reduce overshoot and oscillations] determines how much the controller responds to the rate of change of the error by adding a term that is proportional to the derivative of the error signal to reduce overshoot and oscillation. but A high value of Kd will cause the controller to respond more aggressively to sudden changes in the error, but may also cause instability and overshooting.
 
